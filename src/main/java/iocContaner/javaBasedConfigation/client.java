@@ -14,6 +14,11 @@ public class client {
         // traveler object using the method start journey
         traveler.startJourny();
 
+        //--------------------------------------------------------------
+
+        bike test = new bike() ;
+        test.moving();
+
 
     }
 }
