@@ -9,7 +9,7 @@ public class classSecond implements Classes{
 
     @Override
     public int className() {
-        return 3;
+        return 2;
     }
 
     @Override
