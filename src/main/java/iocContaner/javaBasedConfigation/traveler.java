@@ -10,7 +10,7 @@ public class traveler {
     }
 
     // now creating the method of the startJourny
-    public void startJourny(){
+    public void startJourny() {
         this.vehicals.moving();
     }
 }
