@@ -3,14 +3,15 @@ package iocContainer.javaBasedConfigation;
 public class FistClass implements Classes {
 
 
-
     @Override
     public String classTeacher() {
+
         return "sakshiMishra";
     }
 
     @Override
     public int className() {
+
         return 1;
     }
 

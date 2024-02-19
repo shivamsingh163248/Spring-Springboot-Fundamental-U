@@ -12,21 +12,20 @@ public class AppConfig {
 
 
     @Bean
-    public Classes FistClass(){
-        return new FistClass() ;
+    public Classes FistClass() {
+
+        return new FistClass();
     }
 
     @Bean
-    public Classes SecondClass(){
-        return new classSecond() ;
+    public Classes SecondClass() {
+        return new classSecond();
     }
 
     @Bean
-    public Classes ThirdClass(){
-        return new classThird() ;
+    public Classes ThirdClass() {
+        return new classThird();
     }
-
-
 
 
 }
