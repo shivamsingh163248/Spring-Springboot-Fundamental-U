@@ -1,8 +1,10 @@
 package componentBasedConfigation.IocContainer.EX2;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("principle")
 public class principle {
 
     /// creating the constructor of the principle class
@@ -10,7 +12,8 @@ public class principle {
     // creating the instance of the StudentClasses interface
     StudentClasses studentClasses ;
 
-    public principle(StudentClasses studentClasses) {
+@Autowired
+public principle(@Qualifier("SeecondClass") StudentClasses studentClasses) {
         this.studentClasses = studentClasses;
     }
 

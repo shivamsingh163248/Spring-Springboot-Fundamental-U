@@ -2,7 +2,7 @@ package componentBasedConfigation.IocContainer.EX2;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("SeecondClass")
 public class secondClass  implements  StudentClasses{
 
     // implementation all the method

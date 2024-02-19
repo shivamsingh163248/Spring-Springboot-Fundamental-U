@@ -2,7 +2,7 @@ package componentBasedConfigation.IocContainer.EX2;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("thirdClass")
 public class thirdClass implements StudentClasses{
     @Override
     public Integer className() {
