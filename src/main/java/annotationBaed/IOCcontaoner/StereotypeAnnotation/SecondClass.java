@@ -1,46 +1,43 @@
 package annotationBaed.IOCcontaoner.StereotypeAnnotation;
 
-public class fristClass implements Student{
-
+public class SecondClass implements Student{
     @Override
     public int StudentRollNo() {
-        return 111;
+        return 122;
     }
 
     @Override
     public String StudentName() {
-        return "shivam singh";
+        return null;
     }
 
     @Override
     public String StudentAddress() {
-        return "nadihar rajgarh mirzapur";
+        return null;
     }
 
     @Override
     public String StudentEmail() {
-        return "s@gmail.com";
-
-
+        return null;
     }
 
     @Override
     public String StudentMobileNumber() {
-        return "+91 23344545";
+        return null;
     }
 
     @Override
     public String StudentCourse() {
-        return "Dsa";
+        return null;
     }
 
     @Override
     public String StudentBranch() {
-        return "cse";
+        return null;
     }
 
     @Override
     public String StudentCollegeName() {
-        return "shps";
+        return null;
     }
 }
