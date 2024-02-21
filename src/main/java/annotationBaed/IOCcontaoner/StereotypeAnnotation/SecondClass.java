@@ -1,5 +1,10 @@
 package annotationBaed.IOCcontaoner.StereotypeAnnotation;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("secondclass")
+@Primary
 public class SecondClass implements Student{
     @Override
     public int StudentRollNo() {
@@ -8,36 +13,36 @@ public class SecondClass implements Student{
 
     @Override
     public String StudentName() {
-        return null;
+        return "shreya singh";
     }
 
     @Override
     public String StudentAddress() {
-        return null;
+        return "varanasi";
     }
 
     @Override
     public String StudentEmail() {
-        return null;
+        return "j@gmail.com";
     }
 
     @Override
     public String StudentMobileNumber() {
-        return null;
+        return "+ 59644444";
     }
 
     @Override
     public String StudentCourse() {
-        return null;
+        return "abc";
     }
 
     @Override
     public String StudentBranch() {
-        return null;
+        return "cse";
     }
 
     @Override
     public String StudentCollegeName() {
-        return null;
+        return "this is the second class student ";
     }
 }

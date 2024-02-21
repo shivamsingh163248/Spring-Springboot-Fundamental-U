@@ -2,17 +2,18 @@ package annotationBaed.IOCcontaoner.StereotypeAnnotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("fristClass")
-public class fristClass implements Student{
+@Component("thirdclass")
+public class ThirdClass implements Student {
+
 
     @Override
     public int StudentRollNo() {
-        return 111;
+        return 133;
     }
 
     @Override
     public String StudentName() {
-        return "shivam singh";
+        return "itisha singh";
     }
 
     @Override
@@ -22,9 +23,7 @@ public class fristClass implements Student{
 
     @Override
     public String StudentEmail() {
-        return "s@gmail.com";
-
-
+        return "g@gmail.com";
     }
 
     @Override
@@ -34,12 +33,12 @@ public class fristClass implements Student{
 
     @Override
     public String StudentCourse() {
-        return "Dsa";
+        return "Bsc";
     }
 
     @Override
     public String StudentBranch() {
-        return "cse";
+        return "math";
     }
 
     @Override
