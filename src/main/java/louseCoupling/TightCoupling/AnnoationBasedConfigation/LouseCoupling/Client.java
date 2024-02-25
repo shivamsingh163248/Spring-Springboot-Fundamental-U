@@ -1,5 +1,8 @@
 package louseCoupling.TightCoupling.AnnoationBasedConfigation.LouseCoupling;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class Client {
 
     // now creatig the main method and the test the louse copuling
@@ -7,11 +10,13 @@ public class Client {
     public static void main(String[] args) {
 
         // creating the object of the message
-        Message message = new EmailService() ;
-        // calling the message sander for the sanding the message
-        messageSnader snaderss = new messageSnader(message) ;
-        // now calling the method
+
         String mag = " hello !! good morning " ;
-        snaderss.Sander(mag);
+
+        // creating the application context
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppconfigAnnotation.class) ;
+        messageSnader  snader = applicationContext.getBean(messageSnader.class);
+        snader.Sander(mag);
+
     }
 }
