@@ -9,6 +9,7 @@ public class classSecond implements Classes{
 
     @Override
     public int className() {
+
         return 2;
     }
 
