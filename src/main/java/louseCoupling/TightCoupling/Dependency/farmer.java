@@ -19,6 +19,9 @@ public class farmer {
         this.Address = address ;
         this.phone = phone ;
     }
+    public farmer(){
+
+    }
 
     public String getFarmerDetails(){
         return "Address=" + Address + ", Name=" + name + ", Phone=" + phone ;
