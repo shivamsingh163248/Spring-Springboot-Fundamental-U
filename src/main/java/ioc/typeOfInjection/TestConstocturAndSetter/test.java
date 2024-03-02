@@ -23,5 +23,13 @@ public class test {
         System.out.println("Total Amount: " + cart.totalAmount());
         System.out.println("Total Product: " + cart.totalProduct());
 
+
+        //.....................................................................
+
+
+
+
+
+
     }
 }

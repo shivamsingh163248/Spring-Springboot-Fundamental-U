@@ -18,7 +18,7 @@ public class UserProduct {
 //        product p9 = new product(900,"Glasses","Accessories");
 //        product p10 = new product(1000,"Belt","Accessories");
 //    }
-
+    product p1 ;
     Cart cart = new Cart();
     public void addProduct(){
         System.out.println("Product name");
@@ -29,7 +29,7 @@ public class UserProduct {
         int price = sc.nextInt();
         System.out.println("Product type");
         String productType = sc.nextLine();
-        product p1 = new product(price,productName,productType);
+         p1 = new product(price,productName,productType);
         cart.addProduct(p1);
 
 
@@ -37,10 +37,25 @@ public class UserProduct {
     }
 
     public void removeProduct(){
-        product p1 = new product(100,"Mobile","Electronics");
+        System.out.println("Product name");
+        // creatin the scanner object
+        Scanner sc = new Scanner(System.in);
+        String productName = sc.nextLine();
+        System.out.println("Product price");
+        int price = sc.nextInt();
+        System.out.println("Product type");
+        String productType = sc.nextLine();
+         p1 = new product(price,productName,productType);
 
         cart.removeProduct(p1);
 
+    }
+
+    public void totalAmount(){
+        System.out.println("Total Amount: " + cart.totalAmount());
+    }
+    public void totalProduct(){
+        System.out.println("Total Product: " + cart.totalProduct());
     }
 
 
