@@ -1,7 +1,10 @@
 package ioc.typeOfInjection.TestConstocturAndSetter;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 
+@Component
 public class Cart {
 
     // creating the cart
@@ -12,6 +15,7 @@ public class Cart {
 
     // creating the constructor of the this cart one is default and another is parameterized
     public Cart() {
+
         products = new ArrayList<product>();
     }
 
@@ -35,6 +39,7 @@ public class Cart {
 
     // creating the function add product to add the product in the cart
     public void addProduct(product p){
+
         products.add(p);
     }
 

@@ -26,6 +26,14 @@ public class test {
 
         //.....................................................................
 
+        UserProduct userProduct = new UserProduct();
+        userProduct.addProduct();
+        userProduct.addProduct();
+        userProduct.addProduct();
+        userProduct.removeProduct();
+        userProduct.totalAmount();
+userProduct.totalProduct();
+
 
 
 

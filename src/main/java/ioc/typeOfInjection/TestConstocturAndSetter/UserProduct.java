@@ -1,7 +1,10 @@
 package ioc.typeOfInjection.TestConstocturAndSetter;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Scanner;
 
+@Component
 public class UserProduct {
 
 
@@ -37,15 +40,15 @@ public class UserProduct {
     }
 
     public void removeProduct(){
-        System.out.println("Product name");
-        // creatin the scanner object
-        Scanner sc = new Scanner(System.in);
-        String productName = sc.nextLine();
-        System.out.println("Product price");
-        int price = sc.nextInt();
-        System.out.println("Product type");
-        String productType = sc.nextLine();
-         p1 = new product(price,productName,productType);
+//        System.out.println("Product name");
+//        // creatin the scanner object
+//        Scanner sc = new Scanner(System.in);
+//        String productName = sc.nextLine();
+//        System.out.println("Product price");
+//        int price = sc.nextInt();
+//        System.out.println("Product type");
+//        String productType = sc.nextLine();
+//         p1 = new product(price,productName,productType);
 
         cart.removeProduct(p1);
 

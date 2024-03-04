@@ -1,5 +1,8 @@
 package ioc.typeOfInjection.TestConstocturAndSetter;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class product {
    private int price;
    private String productName;
