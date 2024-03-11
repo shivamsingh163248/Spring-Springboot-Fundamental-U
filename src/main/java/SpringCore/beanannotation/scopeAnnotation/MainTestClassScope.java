@@ -27,9 +27,23 @@ public class MainTestClassScope {
 
         // now creating the prototype
 
+        // now printing the hasconde of each objet of the application context
+        System.out.println(singltonBean.hashCode());
+        System.out.println(singltonBean1.hashCode());
+        System.out.println(singltonBean2.hashCode());
+
+        // now you can all the hashcode  are the same in singleton
+
+
+
         PrototypeBean prototypeBean1 = applicationContext.getBean(PrototypeBean.class) ;
         PrototypeBean prototypeBean2 = applicationContext.getBean(PrototypeBean.class) ;
         PrototypeBean prototypeBean3 = applicationContext.getBean(PrototypeBean.class) ;
+
+        System.out.println(prototypeBean1.hashCode());
+        System.out.println(prototypeBean2.hashCode());
+        System.out.println(prototypeBean3.hashCode());
+
 
 
 
