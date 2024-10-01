@@ -16,4 +16,8 @@ public class PrototypeBean {
         // creating the printing
         System.out.println("this is the prototype bean ");
     }
+
+    // creating a method of student tata accpet name moble no and adress
+
+    
 }
