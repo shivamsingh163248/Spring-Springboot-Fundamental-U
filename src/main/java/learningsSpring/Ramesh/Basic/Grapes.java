@@ -1,6 +1,14 @@
 package learningsSpring.Ramesh.Basic;
 
-public interface Grapes {
+public class Grapes implements Frutes{
+    @Override
+    public void aboutFruit() {
+        System.out.print("this is the Grapes ");
+    }
 
-    public void feature();
+    @Override
+    public void Details() {
+        System.out.print("this is the Grapes  fruit all the Details ");
+
+    }
 }

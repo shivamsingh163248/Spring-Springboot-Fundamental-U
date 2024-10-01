@@ -1,8 +1,10 @@
 package learningsSpring.Ramesh.Basic;
 
-public class Frutes implements Apple , Grapes , Mangos{
-    @Override
-    public void feature() {
+public interface Frutes {
 
-    }
+    // creating  the feature of the frutes
+    public void aboutFruit() ;
+
+    public void  Details() ;
+
 }

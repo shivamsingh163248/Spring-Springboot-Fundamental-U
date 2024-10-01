@@ -1,6 +1,14 @@
 package learningsSpring.Ramesh.Basic;
 
-public interface Apple {
+public class Apple implements Frutes{
+    @Override
+    public void aboutFruit() {
+        System.out.print("this is the Apple fruit");
+    }
 
-    public  void feature() ;
+    @Override
+    public void Details() {
+        System.out.print("Apple is the belong the Kashmir");
+
+    }
 }
