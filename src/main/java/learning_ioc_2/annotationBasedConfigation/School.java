@@ -16,5 +16,8 @@ public class School {
     }
 
     // now creating the method of the print
+    public void print(){
+       schoolClass.classDetails();
+    }
 
 }

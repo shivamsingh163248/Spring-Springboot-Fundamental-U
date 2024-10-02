@@ -1,7 +1,6 @@
 package learning_ioc_2.annotationBasedConfigation;
 
 import learning_IOC.StereotypeAnnotation.fristClass;
-import learning_ioc_2.version1.JavaBaedConfigation.School;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -16,7 +15,7 @@ public class RunApplicationAnnotationBasedConfiagtion {
         SecondClass secondClass = applicationContext.getBean(SecondClass.class) ;
         ThirdClass thirdClass = applicationContext.getBean(ThirdClass.class) ;
 
-        // and also check the scool
+        // and also check the school
         School school = applicationContext.getBean(School.class) ;
 
 
@@ -25,7 +24,7 @@ public class RunApplicationAnnotationBasedConfiagtion {
         secondClass.classDetails();
         thirdClass.classDetails();
 
-        school.
+        school.print();
 
     }
 }
