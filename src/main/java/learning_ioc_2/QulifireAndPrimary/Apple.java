@@ -1,4 +1,19 @@
 package learning_ioc_2.QulifireAndPrimary;
 
-public class Apple {
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("Apple")
+@Primary
+public class Apple implements Fruit{
+    @Override
+    public boolean sweet() {
+        return true;
+    }
+
+    @Override
+    public void type() {
+  System.out.println("this is the kasmiri apple");
+  System.out.println("Apple are the delivered");
+    }
 }
