@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan(basePackages = "annotationBasedConfigation")
+@ComponentScan(basePackages = "learning_ioc_2.annotationBasedConfigation")
 public class AppCongigationAnnotation {
 
     // now automatic configure all the bean
