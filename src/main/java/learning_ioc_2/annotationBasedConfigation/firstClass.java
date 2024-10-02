@@ -1,5 +1,8 @@
 package learning_ioc_2.annotationBasedConfigation;
 
+import org.springframework.stereotype.Component;
+
+@Component("firstClass")
 public class firstClass implements  SchoolClass{
 
     @Override

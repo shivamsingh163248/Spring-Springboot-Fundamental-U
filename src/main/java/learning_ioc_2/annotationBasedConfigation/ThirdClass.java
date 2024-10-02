@@ -1,5 +1,8 @@
 package learning_ioc_2.annotationBasedConfigation;
 
+import org.springframework.stereotype.Component;
+
+@Component("ThirdClass")
 public class ThirdClass implements SchoolClass {
 
 
