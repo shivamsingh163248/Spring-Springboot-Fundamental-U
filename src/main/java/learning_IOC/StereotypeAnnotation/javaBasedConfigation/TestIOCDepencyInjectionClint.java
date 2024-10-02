@@ -24,7 +24,7 @@ public class TestIOCDepencyInjectionClint {
         vehicals.moving();
 
         // creating and the calling the one more method
-        cycle cycles = applicationContext.getBean(cycle.class);
-        cycles.moving();
+//        cycle cycles = applicationContext.getBean(cycle.class);
+//        cycles.moving();
 }
 }

@@ -8,8 +8,7 @@ public class School {
     }
 
     // creating the values
-    private   void printSchoolDetails(schoolClass school){
-        school.classDetails();
-        school.classFeature();
+    private void printSchoolDetails(schoolClass school){
+        System.out.println("check the school property");
     }
 }
