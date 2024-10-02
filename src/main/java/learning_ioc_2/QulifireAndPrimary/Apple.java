@@ -14,6 +14,6 @@ public class Apple implements Fruit{
     @Override
     public void type() {
   System.out.println("this is the kasmiri apple");
-  System.out.println("Apple are the delivered");
+
     }
 }

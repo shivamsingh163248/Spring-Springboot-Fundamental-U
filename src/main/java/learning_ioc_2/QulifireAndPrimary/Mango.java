@@ -12,6 +12,5 @@ public class Mango implements  Fruit{
     @Override
     public void type() {
        System.out.println("this is the king of the fruit");
-        System.out.println("Mango are the delivered");
     }
 }

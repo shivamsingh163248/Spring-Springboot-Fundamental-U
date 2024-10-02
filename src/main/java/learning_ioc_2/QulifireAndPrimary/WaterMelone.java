@@ -12,6 +12,6 @@ public class WaterMelone implements Fruit{
     @Override
     public void type() {
       System.out.print("its include is the water");
-        System.out.println("WaterMelon are the delivered");
+
     }
 }

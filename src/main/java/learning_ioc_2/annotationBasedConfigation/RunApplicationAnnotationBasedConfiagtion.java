@@ -19,6 +19,7 @@ public class RunApplicationAnnotationBasedConfiagtion {
         School school = applicationContext.getBean(School.class) ;
 
 
+
         // print all the class
         aClass.classDetails();
         secondClass.classDetails();
