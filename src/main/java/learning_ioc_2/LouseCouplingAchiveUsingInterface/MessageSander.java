@@ -20,7 +20,7 @@ public class MessageSander {
     }
 
     @Autowired
-    public MessageSander(@Qualifier("SMSservice") ServiceType type ,@Qualifier("Email") ServiceType email){
+    public MessageSander(@Qualifier("") ServiceType type ,@Qualifier("SMSservice") ServiceType email){
         this.type = type ;
         this.emailService = email ;
     }

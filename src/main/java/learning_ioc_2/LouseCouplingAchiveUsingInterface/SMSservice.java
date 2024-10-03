@@ -2,7 +2,7 @@ package learning_ioc_2.LouseCouplingAchiveUsingInterface;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("SMSservice")
 public class SMSservice implements ServiceType{
     @Override
     public void sandMessage(String message) {
