@@ -1,5 +1,8 @@
 package learning_ioc_2.LouseCouplingAchiveUsingInterface;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class WhatsAppService implements ServiceType {
 
 

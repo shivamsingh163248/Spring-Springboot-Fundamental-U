@@ -1,5 +1,8 @@
 package learning_ioc_2.LouseCouplingAchiveUsingInterface;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public interface ServiceType {
 
     // creating the function
