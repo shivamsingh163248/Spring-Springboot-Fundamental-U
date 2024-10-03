@@ -19,6 +19,8 @@ public class RunApplication {
 
 
         System.out.println(aClass.ControllerStatement() );
+        System.out.println(serviceClass.ServiceString());
+        System.out.println(repositoryClass.ReposString());
 
 
 
