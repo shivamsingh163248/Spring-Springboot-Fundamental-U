@@ -9,7 +9,7 @@ public class MessageSander {
 
 // creating the instace
     ServiceType type ;
-    ServiceType smsService ;
+    ServiceType emailService;
 
     // creating the constructor
 
@@ -19,9 +19,9 @@ public class MessageSander {
         this.type = type  ;
     }
 
-    public MessageSander(@Qualifier("SMSservice") ServiceType type , ServiceType smsService){
+    public MessageSander(@Qualifier("SMSservice") ServiceType type ,@Qualifier("Email") ServiceType email){
         this.type = type ;
-        this.smsService = smsService ;
+        this.emailService = email ;
 
     }
 
