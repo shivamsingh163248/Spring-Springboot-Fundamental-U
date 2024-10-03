@@ -12,7 +12,7 @@ public class RunApplication {
         // creating the object without the new key world
         EmailService emailService = applicationContext.getBean(EmailService.class) ;
         String message = "good morning have a nyc day itisha " ;
-        emailService.sandMessage(message);
+        // emailService.sandMessage(message);
         MessageSander messageSander = applicationContext.getBean(MessageSander.class) ;
         messageSander.SandMessage(message);
     }

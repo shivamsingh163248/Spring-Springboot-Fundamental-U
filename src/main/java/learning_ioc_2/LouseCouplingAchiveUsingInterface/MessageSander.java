@@ -14,13 +14,13 @@ public class MessageSander {
     // creating the constructor
 
 
-    public MessageSander(@Qualifier("SMSservice") ServiceType type){
+    public MessageSander(@Qualifier("emailService") ServiceType type){
 
        this.whatsapp = type ;
     }
 
     @Autowired
-    public MessageSander(@Qualifier("whatsAppService") ServiceType whatsapp   ,  ServiceType emailService){
+    public MessageSander(@Qualifier("emailService") ServiceType whatsapp   , @Qualifier("whatsAppService") ServiceType emailService){
      this.whatsapp = whatsapp ;
      this.emailService = emailService ;
     }
