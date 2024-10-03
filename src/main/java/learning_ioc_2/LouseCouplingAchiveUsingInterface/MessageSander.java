@@ -13,20 +13,21 @@ public class MessageSander {
 
     // creating the constructor
 
-    @Autowired
+
     public MessageSander(@Qualifier("SMSservice") ServiceType type){
 
         this.type = type  ;
     }
 
+    @Autowired
     public MessageSander(@Qualifier("SMSservice") ServiceType type ,@Qualifier("Email") ServiceType email){
         this.type = type ;
         this.emailService = email ;
-
     }
 
     // creating the method
     public void SandMessage(String Message){
            type.sandMessage(Message);
+           emailService.sandMessage("This is the email service ");
     }
 }
