@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class MessageSander {
 
 // creating the instace
-    ServiceType type ;
+    ServiceType whatsapp ;
     ServiceType emailService;
 
     // creating the constructor
@@ -16,18 +16,19 @@ public class MessageSander {
 
     public MessageSander(@Qualifier("SMSservice") ServiceType type){
 
-        this.type = type  ;
+       this.whatsapp = type ;
     }
 
     @Autowired
-    public MessageSander(@Qualifier("") ServiceType type ,@Qualifier("SMSservice") ServiceType email){
-        this.type = type ;
-        this.emailService = email ;
+    public MessageSander(@Qualifier("whatsAppService") ServiceType whatsapp   ,  ServiceType emailService){
+     this.whatsapp = whatsapp ;
+     this.emailService = emailService ;
     }
 
     // creating the method
     public void SandMessage(String Message){
-           type.sandMessage(Message);
-           emailService.sandMessage("This is the email service ");
+          whatsapp.sandMessage(Message);
+          emailService.sandMessage("this is the email message");
+
     }
 }
