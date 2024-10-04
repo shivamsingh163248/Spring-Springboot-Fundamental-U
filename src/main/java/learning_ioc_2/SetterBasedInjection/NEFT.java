@@ -11,9 +11,9 @@ public class NEFT implements TransactionMode{
 
     // creating the function for the print  all the transaction
     private void printMode(int amount){
-        System.out.print("amount : "+amount);
-        System.out.print("A/C : XXXXXXXXXX454" );
-        System.out.print("Mode : NEFT");
+        System.out.println("amount : "+amount);
+        System.out.println("A/C : XXXXXXXXXX454" );
+        System.out.println("Mode : NEFT");
 
     }
 }
