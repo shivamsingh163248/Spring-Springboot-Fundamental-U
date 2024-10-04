@@ -21,6 +21,10 @@ class student{
         System.out.println("this is the destroy method");
     }
 
+    public void checktest(){
+        teacher.about();
+    }
+
 
 
 }
@@ -65,9 +69,12 @@ public class application {
         }
 
         // now check using the name of the bean
-        teacher teacher = (learning_ioc_2.beanFeatureWorking.teacher) applicationContext.getBean("teacherTest");
+       student teacher = (student) applicationContext.getBean("firstStudent");
         // noe printing the teacher about
-        teacher.about();
+        teacher.checktest();
+
+
+        // using the distort method using the try
     }
     
 
