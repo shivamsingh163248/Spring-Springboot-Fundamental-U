@@ -21,7 +21,7 @@ public class product {
     }
 
 
-    public void setProduct( productDetails mechanic){
+    public void Product( productDetails mechanic){
         this.stesonery = mechanic ;
     }
 }
