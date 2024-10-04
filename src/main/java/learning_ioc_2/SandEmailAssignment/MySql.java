@@ -1,5 +1,10 @@
 package learning_ioc_2.SandEmailAssignment;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class MySql implements  DataServer{
 
 
